@@ -3,7 +3,7 @@
 
 int main()
 {
-    HWND ng_window = FindWindowA(NULL, "AssaultCube");
+    HWND ng_window = FindWindowA(NULL, "Gamehere");
     DWORD window_thread = 0;
     GetWindowThreadProcessId(ng_window, &window_thread);
 
