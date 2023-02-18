@@ -8,7 +8,7 @@ int main()
     GetWindowThreadProcessId(ng_window, &window_thread);
 
     DWORD Whateveryouwanttoput = 0;
-    HANDLE nig_window = OpenProcess(PROCESS_ALL_ACCESS, FALSE, Whateveryouwanttoput);
+    HANDLE ng_window = OpenProcess(PROCESS_ALL_ACCESS, FALSE, Whateveryouwanttoput);
 
      DWORD newValue = 0;
 
