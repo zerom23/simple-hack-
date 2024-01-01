@@ -13,11 +13,11 @@ int main()
 		GetWindowThreadProcessId(hwnd,&ProcessId);
 		
 		HANDLE procId = OpenProcess(PROCESS_ALL_ACCESS,FALSE,ProcessId);
-		if (!ProcessId == NULL)
+		if (!ProcessId == true)
 		{
-			std::cout << "didnt find winodw process\n";
-			exit(-1);
+			std::cout << "found winodw process\n";
 		}
 		WriteProcessMemory(procId, (LPVOID)0x05FEC9C, &health,9999,0);
+		reinterpret_cast<uintptr_t*>(0x05FEC9C, health, 9999);
 		return 0;
 }
